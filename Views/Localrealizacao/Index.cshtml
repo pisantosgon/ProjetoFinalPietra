@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ProjetoFinalPietra.Models.Localrealizacao>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Local de realização</h1>
+
+<p>
+    <a class="botao" asp-action="Create">Criar novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LocalNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocalNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade.CidadeNome)
+            </td>
+            <td>
+                    <a class="botao" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a class="botao" asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a class="botao" asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

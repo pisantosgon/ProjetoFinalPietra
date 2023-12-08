@@ -1,0 +1,26 @@
+﻿@model ProjetoFinalPietra.Models.Usuario
+@{
+    Layout = null;
+}
+<link href="~/css/login.css" rel="stylesheet" />
+<div class="box-login">
+    <form asp-action="Login">
+        <section class="box-1">
+            <h3>Acesse sua conta</h3>
+            <div class="form-input">
+                <label asp-for="UsuarioEmail" class="email"></label>
+                <input asp-for="UsuarioEmail" type="email" placeholder="Insira seu endereço de email" class="input-medio" />               
+            </div>
+            <div class="form-input">
+                <label style="margin-right:300px" asp-for="UsuarioSenha"></label>
+                <input asp-for="UsuarioSenha" class="input-medio" />               
+            </div>
+            <br />
+            <h4>@ViewBag.Mensagem</h4>
+            <br />
+            <div class="form-controle">
+                <input  type="submit" value="Entrar" class="btn" />
+            </div>
+        </section>
+    </form>
+</div>        

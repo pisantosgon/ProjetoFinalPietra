@@ -1,0 +1,35 @@
+﻿@model ProjetoFinalPietra.Models.Estado
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Criar</h1>
+
+<h4>Estado</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EstadoNome" class="control-label"></label>
+                <input asp-for="EstadoNome" class="form-control" />
+                <span asp-validation-for="EstadoNome" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input class="botao" type="submit" value="Criar" class="btn btn-primary" />
+                <a class="botao" asp-action="Index">Voltar para lista</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+   
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,40 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+   
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: aliceblue !important;
+}
+.botao {
+    background-color: cornflowerblue !important;
+    border-radius: 5px;
+    border:1px solid blue;
+    text-decoration:none;
+    padding: 5px;
+    color: white;
+    width: 70px !important;
+    height: 35px !important;
+}
+.menucor {
+    background-color: #A0DBED !important;
+}
+.rodape {
+    background-color: #A0DBED !important;
+}
+.img-logo{
+    width: 80px;
+    height: 80px;
+}

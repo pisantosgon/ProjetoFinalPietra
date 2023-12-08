@@ -1,0 +1,49 @@
+﻿@model ProjetoFinalPietra.Models.Procedimentorealizado
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/Imprimir.css" asp-append-version="true" />
+<h1>Exame</h1>
+
+<h4>Resultado</h4>
+<hr />
+<body>
+    <div class="div-1">
+        <div>
+            <img class="img-logo" src="~/img/ProLab (1).png" />
+        </div>
+        <div>
+            <h1>Laboratorio de Exame</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="inicio">
+        <div>
+            <br>
+            <h2>Paciente: @Html.DisplayFor(model => model.Cliente.ClienteNome) </h2>4
+            <h2>sexo:  @Html.DisplayFor(model => model.Cliente.ClienteSexo) </h2>
+            <h2>CPF:  @Html.DisplayFor(model => model.Cliente.ClienteCpf)</h2>
+            <h2>Telefone:  @Html.DisplayFor(model => model.Cliente.ClienteTelefone)</h2> 
+            <h2>Endereco:   @Html.DisplayFor(model => model.Cliente.ClienteEndereco)</h2>
+            <h2>Cidade:    @Html.DisplayFor(model => model.Cliente.Cidade.CidadeNome)</h2>           
+            <br>
+        </div>
+        <hr>
+        <div class="datas">
+            <br>
+            <h2>
+                Data da realizacao: @Html.DisplayFor(model => model.DataRealizacao)</h2>
+                <br>
+        </div>
+        <hr>
+        <div class="resultado">
+            <br>
+            <h2>Procedimento:   @Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</h2>
+            <h2>Observação:    @Html.DisplayFor(model => model.ObservacaoRealizacao)</h2>
+            <h2>Profissional:   @Html.DisplayFor(model => model.Colaborador.ColaboradorNome)</h2>
+            <h2>Cargo:   @Html.DisplayFor(model => model.Colaborador.Tipocolaborador.TipoColaboradorNome)</h2>
+            <br>
+            <hr>
+        </div>
+    </div>
+</body>

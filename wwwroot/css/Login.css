@@ -1,0 +1,105 @@
+﻿html, body, main, div, header, form, input, select, label {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Baloo-da";
+    src: url("BalooDa-Regular.ttf");
+}
+
+main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: "Baloo-da";
+}
+
+.header-top {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 180px;
+    display: flex;
+}
+
+.header-right {
+    margin-left: 1050px;
+    padding: 70px;
+}
+
+.box-1 {
+    background-color: lightskyblue;
+    width: 30%;
+    height: 500px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.frase {
+    font-size: 24px;
+    display: block;
+    margin-top: 50px;
+}
+
+.email {
+    text-align: left;
+    margin-left: 28px;
+}
+
+.senha {
+    text-align: left;
+    margin-left: 28px;
+}
+
+.box-2 {
+    display: flex;
+    flex-flow: row;
+}
+
+.btn {
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.form-input,
+.form-controle {
+    margin-top: 50px;
+}
+
+    .form-input input {
+        border: 2px solid black;
+        height: 40px;
+        width: 400px;
+        border-radius: 5px;
+    }
+
+    .form-input label {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+input::placeholder {
+    padding: 5px;
+}
+
+.conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    width: 100%;
+}
+
+.form-frase {
+    display: block;
+    margin-top: 20px;
+}
+
